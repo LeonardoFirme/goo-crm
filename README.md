@@ -10,6 +10,8 @@
 
 O **Goo CRM** é um ecossistema minimalista e profissional projetado para a gestão eficiente de faturamento, clientes e projetos. Desenvolvido com foco em UX/UI limpa, o sistema oferece uma visão clara da saúde financeira e do progresso operacional de agências e prestadores de serviço.
 
+![display](public/display.png)
+
 ---
 
 ## 🚀 Funcionalidades Principais
