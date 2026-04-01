@@ -1,0 +1,21 @@
+<?php
+// database/migrations/2026_03_31_183446_add_payment_method_to_invoices_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    public function up(): void
+    {
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->string('payment_method')->nullable()->after('status');
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->dropColumn('payment_method');
+        });
+    }
+};
