@@ -1,58 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Goo CRM - Sistema de Gestão Simples e Descomplicada (ERP)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![goo](public/logo.png)
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O **Goo CRM** é um ecossistema minimalista e profissional projetado para a gestão eficiente de faturamento, clientes e projetos. Desenvolvido com foco em UX/UI limpa, o sistema oferece uma visão clara da saúde financeira e do progresso operacional de agências e prestadores de serviço.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Funcionalidades Principais
 
-## Learning Laravel
+### 📊 Dashboard Inteligente
+* **KPIs em Tempo Real:** Monitoramento de faturamento recebido, valores a receber e taxa de inadimplência.
+* **Filtros Dinâmicos:** Visualização de resultados por períodos (7 dias, 30 dias, 6 meses e 1 ano).
+* **Navegação Rápida:** Atalhos para as últimas movimentações financeiras e novos clientes.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 👥 Gestão de Clientes
+* Cadastro completo de Clientes e Leads.
+* Controle de status dinâmico (Ativo, Inativo, Lead).
+* Sistema de segurança com modal de confirmação via digitação de nome.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 📂 Gestão de Projetos
+* Acompanhamento de prazos e orçamentos.
+* Vinculação direta com faturamento.
+* Recurso de arquivamento para manutenção histórica.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 💰 Fluxo Financeiro
+* Gerenciamento de faturas com geração de PDF.
+* Controle de status automático (Pendente, Pago, Atrasado).
+* Segurança reforçada para estornos financeiros.
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🛠️ Stack Técnica
 
-```bash
-composer require laravel/boost --dev
+* **Framework:** Laravel 11 (Blade Traditional)
+* **Frontend:** Tailwind CSS (Minimalist UI)
+* **Interatividade:** Alpine.js
+* **Banco de Dados:** MySQL com UUID em todas as estruturas.
+* **Autenticação:** Laravel Breeze.
+* **Gerenciamento de Assets:** Vite.
 
-php artisan boost:install
-```
+---
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 📦 Instalação e Configuração
 
-## Contributing
+Siga os passos abaixo para configurar o ambiente de desenvolvimento local:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Clonar o Repositório:**
+   ```bash
+   git clone git@github.com:LeonardoFirme/goo-crm.git
+   cd goo-crm
+    ```
 
-## Code of Conduct
+2.  **Instalar Dependências PHP:**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    ```bash
+    composer install
+    ```
 
-## Security Vulnerabilities
+3.  **Instalar Dependências de Assets:**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```bash
+    npm install && npm run dev
+    ```
 
-## License
+4.  **Configurar Ambiente:**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+5.  **Configurar Banco de Dados:**
+    No seu arquivo `.env`, ajuste as credenciais do MySQL e execute:
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+6.  **Iniciar Servidor:**
+
+    ```bash
+    php artisan serve
+    ```
+
+-----
+
+## 🛡️ Segurança e Padrões de Layout
+
+Este projeto segue diretrizes rígidas de design e desenvolvimento:
+
+  * **Minimalismo Profissional:** UX focada no dado, sem distrações.
+  * **Proibição Estética:** Nenhuma utilização de classes `italic` ou `uppercase` no layout.
+  * **Persistência:** Uso obrigatório de UUID para integridade de dados e segurança em URLs.
+  * **Responsividade:** Interface adaptativa para dispositivos móveis via Sidebar inteligente.
+
+-----
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](https://www.google.com/search?q=LICENSE).
+
+-----
+
+**Autor e Desenvolvedor do projeto:**
+
+[![Leonardo Firme](https://img.shields.io/badge/Leonardo_Firme-fff1f0?style=for-the-badge&logo=&logoColor=white)](https://github.com/LeonardoFirme)
