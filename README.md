@@ -89,6 +89,12 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local:
     php artisan serve
     ```
 
+7.  **Iniciar NPM para o laytout:**
+
+    ```bash
+    npm run dev
+    ```
+
 -----
 
 ## 🛡️ Segurança e Padrões de Layout
@@ -104,7 +110,7 @@ Este projeto segue diretrizes rígidas de design e desenvolvimento:
 
 ## 📄 Licença
 
-Este projeto está sob a licença [MIT](https://www.google.com/search?q=LICENSE).
+Este projeto está sob a licença [MIT](https://github.com/LeonardoFirme/goo-crm?tab=MIT-1-ov-file).
 
 -----
 
